@@ -1,7 +1,7 @@
 # Predicting-ADHD-Outcomes-And-Sex-From-High-Dimensional-Neuroimaging-Data
 A robust multi-label classification pipeline for ADHD and sex prediction using fMRI connectome data with 19,000+ features. Combines preprocessing, feature selection, hyperparameter tuning, and ensemble learning for accurate and interpretable results.
 
-### 🧠 **Problem Statement**
+## 🧠 **Problem Statement**
 **Goal:** To predict both ADHD diagnosis and biological sex using functional MRI connectome data, which is inherently:
 - Extremely high-dimensional (19,000+ features)
 - Imbalanced (majority = male, non-ADHD)
@@ -13,14 +13,14 @@ A robust multi-label classification pipeline for ADHD and sex prediction using f
 - Ensuring model robustness on small, imbalanced datasets
 - Prioritizing interpretability and clinical relevance.
 
-### 📦 **Dataset & Tools**
+## 📦 **Dataset & Tools**
 - 📊 Source: [WiDS Datathon 2025](https://www.kaggle.com/competitions/widsdatathon2025)
 - 💽 Data files:
     - Functional MRI (connectomes)
     - Target labels (ADHD outcome, Sex)
     - Socioeconomic and survey responses
 
-### 🛠️ **Methodology**
+## 🛠️ **Methodology**
 🔍 **1. Data Preprocessing**
 - **Null Imputation:**
   
@@ -34,15 +34,15 @@ A robust multi-label classification pipeline for ADHD and sex prediction using f
 - **Method:** Lasso-regularized Logistic Regression (SelectFromModel)
 - **Why:** Preserves interpretability and handles high-dimensional, multi-label setting better than PCA/LDA
 
-### 🧠 **Results**
+## 🧠 **Results**
 - **Linear models (SVM, LR)** performed best — indicating brain-based ADHD differences are likely linearly separable.
 - **Stacking** SVM & LR significantly improved generalization.
 
-### 🧩 **Scientific Insights**
+## 🧩 **Scientific Insights**
 - **ADHD Prediction > Sex Prediction**: Functional brain differences linked to ADHD were more distinct than those related to sex.
 - **Feature Relevance:** Lasso revealed key neuro-connectivity features as strong indicators — aligned with recent fMRI literature.
 
-### 🚧 **Limitations**
+## 🚧 **Limitations**
 - Low sample size (~1,200) vs high-dimensionality (~19k features)
 - Class imbalance impacted minority class recall
 - Tree-based models prone to overfitting due to sparse signal
