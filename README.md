@@ -14,7 +14,7 @@ A robust multi-label classification pipeline for ADHD and sex prediction using f
 - Prioritizing interpretability and clinical relevance.
 
 ### 📦 **Dataset & Tools**
-- 📊 Source: WiDS Datathon 2025
+- 📊 Source: [WiDS Datathon 2025](https://www.kaggle.com/competitions/widsdatathon2025)
 - 💽 Data files:
     - Functional MRI (connectomes)
     - Target labels (ADHD outcome, Sex)
@@ -34,7 +34,7 @@ A robust multi-label classification pipeline for ADHD and sex prediction using f
 - **Method:** Lasso-regularized Logistic Regression (SelectFromModel)
 - **Why:** Preserves interpretability and handles high-dimensional, multi-label setting better than PCA/LDA
 
-### 🧠 **Results **
+### 🧠 **Results**
 - **Linear models (SVM, LR)** performed best — indicating brain-based ADHD differences are likely linearly separable.
 - **Stacking** SVM & LR significantly improved generalization.
 
